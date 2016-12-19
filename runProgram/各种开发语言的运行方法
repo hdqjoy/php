@@ -1,0 +1,111 @@
+各种开发语言的运行方法
+(以输出hello world为例)
+
+[PHP]
+name: hello.php
+code:
+<?php
+echo 'hello world'."\n";
+
+run: php hello.php
+
+[C]
+name: hello.c
+code:
+#include <stdio.h>
+int main(){
+    printf("%s\n","hello world");
+}
+
+run: gcc hello.c -o hello
+     ./hello 
+
+[C++]
+name: hello.cc
+code:
+#include <iostream>
+int main(){
+    std::cout<<"hello world \n c++ \n";
+    return 0;
+}
+
+run: g++ hello.cc -o hello
+     ./hello 
+
+[JAVA]
+name HelloWorld.java (注意：文件名和类名保持一致)
+code:
+public class HelloWorld{
+    public static void main(String[] args) {  
+        System.out.println("Hello World!"); 
+    }
+}
+
+run:javac HelloWorld.java
+    java HelloWorld
+
+[C#]
+name: hello.cs
+code:
+using System;
+// A "Hello World!" program in C#
+namespace HelloWorld
+{
+    class HelloWorld{
+        public static void Main(){
+            Console.WriteLine("HelloWorld");
+        }
+    }
+}
+
+run: csc hello.cs
+     hello
+
+[Python]
+name: hello.py
+code:
+#!/usr/bin/env python
+print 'Hello World'
+
+run: chmod 777 hello.py
+     ./hello.py
+
+[Perl]
+name: hello.pl
+code:
+#!/usr/bin/perl
+print "hello world\n";
+
+run: chmod 777 hello.pl
+     ./hello.pl
+
+[Ruby]
+name: hello.rb
+code:
+#!/usr/bin/ruby
+puts "hello world"
+
+run: chmod 777 hello.rb
+     ./hello.rb
+
+---------------------------------------------------
+
+选择的比较语言：Java、.NET、C/C++、PHP、Python、Perl、ruby
+以上均属于服务器端开发语言，其中Java、.NET、C/C++属于静态编译型语言，PHP、Python、Perl、ruby属于动态解释型语言
+
+//C#是一个语言，.net是一个平台，上面支持用C#或者VBdotNet写代码。asp同jsp样，用来写动态网页的。
+
+//python 是一种面向对象的脚本语言，语法没有大括号，主要靠缩进实现代码块，有些人认为这样的结果清晰，明了
+//主要应用于系统管理和Web编程，包括3D游戏开发等
+
+//perl 被更多的用于系统管理的脚本语言，用来结合 或者 替代shell作为系统管理的程序语言
+//perl的优势在于文本处理（强大的正则表达式，PHP就是兼容perl的） 和 数据库处理
+
+//ruby 在国外项目中应用较多，其ruby on rails框架让ruby受到了更多的关注。
+
+ 
+学习自：《PHP老杨》 https://mp.weixin.qq.com/s/AaQOW4GvtzKfmhR0oF7fFw
+
+
+
+
